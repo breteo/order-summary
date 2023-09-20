@@ -100,7 +100,7 @@ select {
 
 body {
   font-family: 'Red Hat Display', sans-serif;
-  background:url(images/pattern-background-mobile.svg), var(--Pale-blue);
+  background:url(images/pattern-background-desktop.svg), var(--Pale-blue);
   background-repeat: no-repeat;
   background-size: contain;
 }
@@ -224,3 +224,24 @@ body {
   color: var(--Dark-blue);
 }
 
+@media (max-width: 768px){
+  body{
+    background:url(images/pattern-background-mobile.svg), var(--Pale-blue);
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  .container {
+    margin: 15px;
+  }
+
+  .proceed-button{
+    box-shadow: 0 10px 10px 0 hsla(245, 75%, 52%, .25);
+    
+  }
+
+  .cancel-button {
+    margin: 1rem;
+    padding: 0;
+  }
+}
